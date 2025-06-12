@@ -1,0 +1,26 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": "gus29271",
+    "database": "tecnigo_dev",
+    "host": "127.0.0.1",
+    "dialect": "postgres",
+    "logging": false
+  },
+  "test": {
+    "username": "postgres",
+    "password": "gus29271",
+    "database": "tecnigo_test",
+    "host": "127.0.0.1",
+    "dialect": "postgres",
+    "logging": false
+  },
+  "production": {
+    "username": "usuario_produccion",
+    "password": "password_produccion_seguro",
+    "database": "tecnigo_prod",
+    "host": "host_de_tu_bd_produccion",
+    "dialect": "postgres",
+    "logging": false
+  }
+}

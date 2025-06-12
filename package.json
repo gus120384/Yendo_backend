@@ -1,0 +1,45 @@
+{
+  "name": "tecnigo-backend",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "test:user:admin": "cross-env NODE_ENV=test jest tests/user.admin.test.js --testTimeout=10000 --detectOpenHandles",
+    "db:migrate:test": "cross-env NODE_ENV=test npx sequelize-cli db:migrate",
+    "db:migrate:status:test": "cross-env NODE_ENV=test npx sequelize-cli db:migrate:status",
+    "db:seed:all:test": "cross-env NODE_ENV=test npx sequelize-cli db:seed:all",
+    "test:pedidos:log": "jest tests/pedido.test.js > test_output.log 2>&1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "cors": "^2.8.5",
+    "dompurify": "^3.2.6",
+    "dotenv": "^16.5.0",
+    "express": "^4.19.2",
+    "express-mongo-sanitize": "^2.2.0",
+    "express-rate-limit": "^7.5.0",
+    "helmet": "^8.1.0",
+    "hpp": "^0.2.3",
+    "jsdom": "^26.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "morgan": "^1.10.0",
+    "pg": "^8.16.0",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.37.7",
+    "sequelize-cli": "^6.6.3",
+    "socket.io": "^4.8.1",
+    "uuid": "^11.1.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.14",
+    "cross-env": "^7.0.3",
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.10",
+    "supertest": "^7.1.1"
+  }
+}
